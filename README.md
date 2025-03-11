@@ -2,7 +2,7 @@
 
 this set up for prepare node-express to use typescript incorparate
 
-## first
+## setup nodejs + express
 
 -select folder that want to place the project
 -use npm init -y to install package.json
@@ -13,9 +13,14 @@ this set up for prepare node-express to use typescript incorparate
 
 "You're already done setup nodejs with express"
 
-## #second
+## #setup typescript
 
 -start install devlopment dependencies for using typescript
 -by npm i --dev typescript @types/express $types/node
 -and then generate tsconfig.json to manage typescript
 -by using npx tsc --init it'll be create tsconfig.json automatically
+-open tsconfig explore structure and then fide "outDir" and then uncommented it
+-then set "outDir": "./dict" and go to package.json to set "main": "dist/index.js"
+-because Typescript code will be complie from src to directory to dict
+
+## #create an express server with a .ts
