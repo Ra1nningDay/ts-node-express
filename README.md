@@ -2,7 +2,7 @@
 
 this set up for prepare node-express to use typescript incorparate
 
-## setup nodejs + express
+## #setup nodejs + express
 
 -select folder that want to place the project
 -use npm init -y to install package.json
@@ -24,3 +24,10 @@ this set up for prepare node-express to use typescript incorparate
 -because Typescript code will be complie from src to directory to dict
 
 ## #create an express server with a .ts
+
+-change package.json to "main": "dist/index.js for when complie ts to js; you can use "node dict/index.js" to run server
+-in tsconfig.json change outDir value to "dict" and rootDir value to "src"
+
+"Done!"
+
+*** if you want to use npm run start instead node dict/index.js every time
